@@ -7,7 +7,6 @@
     align-items: center;
 }
 
-
 .link__card {
     height: 20.7vh;
     width: 70%;
@@ -26,4 +25,8 @@
 .card__container span {
     color: #fff;
     font-size: 3rem;
+}
+
+.card__container img {
+    height: 50%;
 }

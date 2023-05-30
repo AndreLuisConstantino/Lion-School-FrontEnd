@@ -1,0 +1,33 @@
+main {
+    grid-column: 1;
+    grid-row: 2/3;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.promotion__container {
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+}
+
+.promotion__text{
+    font-weight: 200;
+    font-size: 3.5rem;
+}
+
+.promotion__text span {
+    color: #3347B0;
+}
+
+.studant__container {
+    grid-column: 2;
+    align-self: center;
+}
