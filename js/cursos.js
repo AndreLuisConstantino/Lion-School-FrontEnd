@@ -6,6 +6,8 @@ const cursos = await getCursos()
 
 const listaCursos = cursos.curso
 
+console.log(listaCursos)
+
 const criarCardsCurso = (curso) => {
     const linkCard = document.createElement('a')
     linkCard.classList.add('link__card')
@@ -20,10 +22,12 @@ const criarCardsCurso = (curso) => {
 
     const imageCard = document.createElement('img')
     imageCard.src = curso.icone
+    imageCard.classList.add('imagem-card')
     imageCard.alt = `Icone do Curso: ${curso.nome}`
 
     const siglaCard = document.createElement('span')
     siglaCard.textContent = curso.sigla
+    localStorage.setItem('sigla-curso', curso.sigla)
 
     containerCard.append(imageCard, siglaCard)
     linkCard.append(containerCard)
